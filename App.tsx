@@ -10,7 +10,6 @@ const App = () => {
   useEffect(() => {
     const getCategories = async () => {
       const categories = await fetchCategories();
-      console.log(JSON.stringify(categories, null, 2))
     }
     getCategories();
   }, [])
