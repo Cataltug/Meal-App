@@ -20,7 +20,7 @@ const LikesScreen = ({navigation}) => {
     data={favorites}
     keyExtractor={(item) => item.idMeal}
     renderItem={({item}) => (
-      <TouchableOpacity onPress={() => navigation.navigate("Detail", {mealId: item.idMeal})}>
+      <TouchableOpacity onPress={()=> navigation.navigate("Home",{screen: "Detail", params: {mealId: item.idMeal}} )}>
         <View style={{flexDirection:"row", alignItems:"center", padding:16}}>
           <Image source={{uri: item.strMealThumb}} style={{width:42, height:42, marginRight:16 }}/>
           <View style={{flex:1}}>
