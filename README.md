@@ -31,9 +31,9 @@
 
 ### Install dependencies
 
-npm install
-- or
-yarn install
+- npm install
+-  or
+- yarn install
 
 ### Configure environment variables
 - Create a .env file in project root with your Firebase config values:
