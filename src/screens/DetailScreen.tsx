@@ -71,7 +71,6 @@ const DetailScreen = ({ route }) => {
       const data = await fetchMealDetail(mealId);
       setMeal(data);
       setLoading(false);
-      console.log(data)
     }
     getMeal();
     

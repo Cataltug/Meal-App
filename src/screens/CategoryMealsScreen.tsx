@@ -17,7 +17,6 @@ const CategoryMealsScreen = ({route, navigation}) => {
       const getMeals = async () => {
         const data = await fetchMealsByCategories(category);
         setMeals(data);
-        console.log(data)
         setLoading(false);
       }
       getMeals();
